@@ -1,8 +1,11 @@
 import React from 'react'
+import CryptoCurrencyList from '../../CryptoList'
 
 function HomePage() {
   return (
-    <h1>HomePage</h1>
+    <main>
+    <CryptoCurrencyList/>
+    </main>
   )
 }
 

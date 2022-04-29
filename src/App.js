@@ -7,6 +7,7 @@ import Navbar from './components/static/navigation/Navbar';
 
 function App() {
   return (
+    <div>
     <BrowserRouter>
     <Navbar/>
     <Routes>
@@ -15,6 +16,15 @@ function App() {
       <Route path="/signup" element={ <Signup/> } />
     </Routes>
     </BrowserRouter>
+    </div>
+
+    //render a list of cryptocurrencies once page is loaded (useEffect)
+      //what will the setup be? what kind of components?
+        //<CryptocurrencyList/>
+        //what does the <CryptoCurrencyList/> contain? 
+        //container which will hold <Cryptocurrencies/>
+            //child components?
+            //<Cryptocurrencies/>
     
   );
 }
