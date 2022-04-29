@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,9 +15,9 @@ function Navbar() {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           Crypto Gecko
         </Typography>
-        <Button color="inherit">Home</Button>
-        <Button color="inherit">Login</Button>
-        <Button color="inherit">Signup</Button>
+        <Button color="inherit" to="/" component={ Link }>Home</Button>
+        <Button color="inherit" to="/login" component={ Link }>Login</Button>
+        <Button color="inherit" to="/signup" component={ Link }>Signup</Button>
       </Toolbar>
     </AppBar>
   </Box>
