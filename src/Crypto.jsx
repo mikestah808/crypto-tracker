@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Crypto() {
+function Crypto({ crypto }) {
   return (
     <div>Cryptocurrency</div>
   )
