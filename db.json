@@ -1,19 +1,184 @@
 {
-  "posts": [
+  "cryptos": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "rank": 1,
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
+      "marketCap": 733805234038,
+      "price": 38488.12
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "rank": 2,
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "image": "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880",
+      "marketCap": 338404304690,
+      "price": 2841.87
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "name": "Tether",
+      "symbol": "USDT",
+      "image": "https://assets.coingecko.com/coins/images/325/large/Tether-logo.png?1598003707",
+      "marketCap": 83098440959,
+      "price": 0.99
+    },
+    {
+      "id": 4,
+      "rank": 4,
+      "name": "Binance Coin",
+      "symbol": "BNB",
+      "image": "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1644979850",
+      "marketCap": 65064319198,
+      "price": 386.64
+    },
+    {
+      "id": 5,
+      "rank": 5,
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "image": "https://assets.coingecko.com/coins/images/6319/large/USD_Coin_icon.png?1547042389",
+      "marketCap": 49009016163,
+      "price": 0.99
+    },
+    {
+      "id": 6,
+      "rank": 6,
+      "name": "Ripple",
+      "symbol": "XRP",
+      "image": "https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1605778731",
+      "marketCap": 733805234038,
+      "price": 0.60
+    },
+    {
+      "id": 7,
+      "rank": 7,
+      "name": "Solana",
+      "symbol": "SOL",
+      "image": "https://assets.coingecko.com/coins/images/4128/large/solana.png?1640133422",
+      "marketCap": 29142444673,
+      "price": 87.14
+    },
+    {
+      "id": 8,
+      "rank": 8,
+      "name": "Terra",
+      "symbol": "LUNA",
+      "image": "https://assets.coingecko.com/coins/images/8284/large/luna1557227471663.png?1567147072",
+      "marketCap": 28387110772,
+      "price": 82.86
+    },
+    {
+      "id": 9,
+      "rank": 9,
+      "name": "Cardano",
+      "symbol": "ADA",
+      "image": "https://assets.coingecko.com/coins/images/975/large/cardano.png?1547034860",
+      "marketCap": 24965062232,
+      "price": 0.77
+    },
+    {
+      "id": 10,
+      "rank": 10,
+      "name": "Terra USD",
+      "symbol": "UST",
+      "image": "https://assets.coingecko.com/coins/images/12681/large/UST.png?1601612407",
+      "marketCap": 18553032429,
+      "price": 1.00
+    },
+    {
+      "id": 11,
+      "rank": 11,
+      "name": "Binance USD",
+      "symbol": "BUSD",
+      "image": "https://assets.coingecko.com/coins/images/9576/large/BUSD.png?1568947766",
+      "marketCap": 17768515790,
+      "price": 0.99
+    },
+    {
+      "id": 12,
+      "rank": 12,
+      "name": "Dogecoin",
+      "symbol": "DOGE",
+      "image": "https://assets.coingecko.com/coins/images/5/large/dogecoin.png?1547792256",
+      "marketCap": 17366383753,
+      "price": 0.13
+    },
+    {
+      "id": 13,
+      "rank": 13,
+      "name": "Polkadot",
+      "symbol": "DOT",
+      "image": "https://assets.coingecko.com/coins/images/12171/large/polkadot.png?1639712644",
+      "marketCap": 16494852947,
+      "price": 14.90
+    },
+    {
+      "id": 14,
+      "rank": 14,
+      "name": "Avalanche",
+      "symbol": "AVAX",
+      "image": "https://assets.coingecko.com/coins/images/12559/large/coin-round-red.png?1604021818",
+      "marketCap": 16058722886,
+      "price": 59.45
+    },
+    {
+      "id": 15,
+      "rank": 15,
+      "name": "Shiba Inu",
+      "symbol": "SHIB",
+      "image": "https://assets.coingecko.com/coins/images/11939/large/shiba.png?1622619446",
+      "marketCap": 11295344353,
+      "price": 0.0002055
+    },
+    {
+      "id": 16,
+      "rank": 16,
+      "name": "Lido Staked Ether",
+      "symbol": "STETH",
+      "image": "https://assets.coingecko.com/coins/images/13442/large/steth_logo.png?1608607546",
+      "marketCap": 11109021623,
+      "price": 2841.55
+    },
+    {
+      "id": 17,
+      "rank": 17,
+      "name": "Wrapped Bitcoin",
+      "symbol": "WBTC",
+      "image": "https://assets.coingecko.com/coins/images/7598/large/wrapped_bitcoin_wbtc.png?1548822744",
+      "marketCap": 10893662293,
+      "price": 38707.18
+    },
+    {
+      "id": 18,
+      "rank": 18,
+      "name": "Dai",
+      "symbol": "DAI",
+      "image": "https://assets.coingecko.com/coins/images/9956/large/4943.png?1636636734",
+      "marketCap": 8350701115,
+      "price": 0.99
+    },
+    {
+      "id": 19,
+      "rank": 19,
+      "name": "NEAR Protocol",
+      "symbol": "NEAR",
+      "image": "https://assets.coingecko.com/coins/images/10365/large/near_icon.png?1601359077",
+      "marketCap": 7891406094,
+      "price": 11.66
+    },
+    {
+      "id": 20,
+      "rank": 20,
+      "name": "Polygon",
+      "symbol": "MATIC",
+      "image": "https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912",
+      "marketCap": 7343463387,
+      "price": 1.06
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

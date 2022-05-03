@@ -1,29 +1,95 @@
-import React from 'react'
-import Crypto from './Crypto'
+import React from 'react';
+import Crypto from './Crypto';
+
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
 
 function CryptoList({ cryptos }) {
-  console.log(cryptos)
 
 
   const renderCryptos = cryptos.map((crypto) => {
-    return <Crypto key={crypto} crypto={crypto}/>
+    return (
+      <Crypto key={crypto.id} crypto={crypto}/>
+    )
   })
 
-
-
-
   return (
-    <table>
-      {renderCryptos}
-    </table>
-  )
+      <TableContainer sx={{ maxHeight: 440 }}>
+        <Table stickyHeader aria-label="sticky table">
+          <TableHead>
+            <TableRow>
+              <TableCell align="left">
+                Rank#
+              </TableCell>
+              <TableCell align="left">
+                Coin
+              </TableCell>
+              <TableCell align="left">
+                Symbol
+              </TableCell>
+              <TableCell align="left">
+                Price
+              </TableCell>
+              <TableCell align="right">
+                Market Cap
+              </TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {renderCryptos}
+          </TableBody>
+        </Table>
+      </TableContainer>
+  );
 }
 
 export default CryptoList;
 
 
+  // const renderCryptos = cryptos.map((crypto) => {
+  //   return <Crypto key={crypto.id} crypto={crypto}/>
+  // })
 
-{/* <table className="table">
+
+  // return (
+  //   <div>
+  //       {renderCryptos}
+  //   </div>
+  // )
+
+
+// export default CryptoList;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <table className="table">
       <thead>
         <tr>
           <th scope="col" >Rank</th>
@@ -37,4 +103,4 @@ export default CryptoList;
           <th scope="col">Last 7 Days</th>
         </tr>
       </thead>
-    </table> */}
+    </table> */

@@ -13,6 +13,13 @@ function Navbar() {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <img 
+          src="https://static.coingecko.com/s/thumbnail-007177f3eca19695592f0b8b0eabbdae282b54154e1be912285c9034ea6cbaf2.png" 
+          alt="crypto-gecko-pic"
+          height="30"
+          width="30"
+          align= "left"
+          />
           Crypto Gecko
         </Typography>
         <Button color="inherit" to="/" component={ Link }>Home</Button>
