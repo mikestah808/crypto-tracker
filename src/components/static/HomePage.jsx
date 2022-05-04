@@ -19,9 +19,9 @@ function HomePage() {
 
 
   return (
-    <main>
+    <div>
     <CryptoList cryptos={cryptos}/>
-    </main>
+    </div>
   )
 }
 

@@ -4,9 +4,9 @@ import Crypto from './Crypto';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
+// import TableRow from '@mui/material/TableRow';
+
 
 function CryptoList({ cryptos }) {
 
@@ -18,32 +18,33 @@ function CryptoList({ cryptos }) {
   })
 
   return (
-      <TableContainer sx={{ maxHeight: 440 }}>
-        <Table stickyHeader aria-label="sticky table">
+      <div>
+        <h2>Cryptocurrency Prices by Market Cap</h2>
+        <Table>
           <TableHead>
-            <TableRow>
+            <tr>
               <TableCell align="left">
-                Rank#
+                Rank #
               </TableCell>
               <TableCell align="left">
                 Coin
               </TableCell>
-              <TableCell align="left">
+              <TableCell align="left" >
                 Symbol
               </TableCell>
               <TableCell align="left">
                 Price
               </TableCell>
-              <TableCell align="right">
+              <TableCell align="left">
                 Market Cap
               </TableCell>
-            </TableRow>
+            </tr>
           </TableHead>
-          <TableBody>
+          <tbody>
             {renderCryptos}
-          </TableBody>
+          </tbody>
         </Table>
-      </TableContainer>
+      </div>
   );
 }
 

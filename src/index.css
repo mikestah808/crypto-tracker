@@ -1,6 +1,7 @@
-.bolded { 
+td{ 
   font-weight: bold; 
 }
 
-
-
+tr{
+  border-bottom:1px solid lightgray; 
+}
