@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import CryptoList from '../../CryptoList'
+import CryptoList from '../CryptoList'
 
 const BASE_URL = "http://localhost:3000/cryptos";
 

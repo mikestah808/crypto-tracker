@@ -6,9 +6,16 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
+import Search from '../Search';
 
-function Navbar() {
+
+
+
+
+
+function Navbar({ search, setSearch }) {
   return (
+    <div>
     <Box sx={{ flexGrow: 1 }}>
     <AppBar position="static">
       <Toolbar>
@@ -25,9 +32,11 @@ function Navbar() {
         <Button color="inherit" to="/" component={ Link }>Home</Button>
         <Button color="inherit" to="/login" component={ Link }>Login</Button>
         <Button color="inherit" to="/signup" component={ Link }>Signup</Button>
+        <Search search={search} setSearch={setSearch}/>
       </Toolbar>
     </AppBar>
   </Box>
+  </div>
   )
 }
 
