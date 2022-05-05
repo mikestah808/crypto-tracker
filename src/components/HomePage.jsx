@@ -31,8 +31,12 @@ function HomePage({ search }) {
   return (
     <div>
     <CryptoList cryptos={filterCrypto}/>
+    
     </div>
   )
 }
 
 export default HomePage;
+
+//create comment section in HomePage.jsx
+//create

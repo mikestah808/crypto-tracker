@@ -3,8 +3,6 @@
 Project Ideas
 
 - Crypto tracker (coin market cap)
-- Netflix clone
-- Workout Logger 
 
 
 ### Features 
