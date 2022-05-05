@@ -4,8 +4,18 @@ import CryptoList from '../CryptoList'
 const BASE_URL = "http://localhost:3000/cryptos";
 
 
-function HomePage() {
+function HomePage({ search }) {
   const [cryptos, setCryptos] = useState([])
+
+  console.log(cryptos)
+
+  //create functionality that will filter through the list of cryptocurrencies based on what is typed in the search input 
+  //if the search input value does not match the listed crypto, then return everything else 
+
+  const filterCrypto = cryptos.filter((crypto) => crypto.name.toLowerCase().includes(search.toLowerCase()))
+
+
+
 
   
   useEffect(() => {
@@ -20,7 +30,7 @@ function HomePage() {
 
   return (
     <div>
-    <CryptoList cryptos={cryptos}/>
+    <CryptoList cryptos={filterCrypto}/>
     </div>
   )
 }
