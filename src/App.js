@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './components/authentication/Login';
 import SignupForm from './components/authentication/SignupForm';
 import HomePage from './components/HomePage';
 import Navbar from './components/navigation/Navbar';
+
+const BASE_URL = "http://localhost:3000";
 
 function App() {
   //create piece of state and update state to be the value of the search input value 
@@ -16,9 +18,18 @@ function App() {
 
   function loginUser(user){
     setCurrentUser(user);
-    setLoggedIn(true)
+    setLoggedIn(true);
+    localStorage.setItem('user_id', user.id);
   }
 
+    useEffect(() => {
+      const userId = localStorage.getItem('user_id');
+      if(userId && !loggedIn){
+        fetch(BASE_URL + '/users/' + userId)
+        .then((resp) => resp.json())
+        .then((data) => loginUser(data))
+      }
+    }, [])
 
   return (
     <div>
