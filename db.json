@@ -191,6 +191,11 @@
       "username": "richard",
       "password": "iluvdonnuts",
       "id": 2
+    },
+    {
+      "username": "bobthefirst",
+      "password": "123",
+      "id": 3
     }
   ]
 }

@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function SignupForm() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
 
 
@@ -23,12 +25,12 @@ function SignupForm() {
     })
     .then(response => response.json())
     .then(data => {
-    console.log('Success:', data);
+    navigate('/');
     })
     .catch((error) => {
-    console.error('Error:', error);
-    });
-    
+      console.error('Error:', error);
+      });
+      
     // alert("Nice! Directing you to the home page")
   }
 
