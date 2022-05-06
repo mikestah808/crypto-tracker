@@ -22,6 +22,12 @@ function App() {
     localStorage.setItem('user_id', user.id);
   }
 
+  function logoutUser(){
+    setCurrentUser({});
+    setLoggedIn(false);
+    localStorage.removeItem('user_id');
+  }
+
     useEffect(() => {
       const userId = localStorage.getItem('user_id');
       if(userId && !loggedIn){
@@ -35,9 +41,10 @@ function App() {
     <div>
     <BrowserRouter>
     <Navbar
-     search={search} setSearch={setSearch}
+    loggedIn={loggedIn}
+    logoutUser={ logoutUser }
+    search={search} setSearch={setSearch}
      />
-     { loggedIn ? <h1>Logged In!</h1> : null }
     <Routes>
       <Route path="/" element={ <HomePage search={search}/> }/>
       <Route path="/login" element={ <Login/> } />
