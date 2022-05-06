@@ -1,11 +1,8 @@
 import React from 'react';
 import Crypto from './Crypto';
-
 import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
-// import TableRow from '@mui/material/TableRow';
 
 
 function CryptoList({ cryptos }) {
@@ -49,21 +46,6 @@ function CryptoList({ cryptos }) {
 }
 
 export default CryptoList;
-
-
-  // const renderCryptos = cryptos.map((crypto) => {
-  //   return <Crypto key={crypto.id} crypto={crypto}/>
-  // })
-
-
-  // return (
-  //   <div>
-  //       {renderCryptos}
-  //   </div>
-  // )
-
-
-// export default CryptoList;
 
 
 

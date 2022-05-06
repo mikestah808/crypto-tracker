@@ -26,7 +26,7 @@ function SignupForm() {
         <div>
           <h2 className="title">Create Account</h2>
         </div>
-        <form className="form-wrapper">
+        <form className="form-wrapper" onSubmit={handleSubmit}>
           <div className="username">
               <label className="label">Username</label>
               <input 
@@ -48,28 +48,6 @@ function SignupForm() {
         </form>
       </div>
     </div>
-
-
-
-    // <form onSubmit={handleSubmit}>
-    //   <h1>Create an Account</h1>
-    //   <label htmlFor="username">Username</label>
-    //   <input
-    //     type="text"
-    //     id="username"
-    //     value={username}
-    //     onChange={(e) => setUsername(e.target.value)}
-    //   />
-
-    //   <label htmlFor="password">Password</label>
-    //   <input
-    //     type="password"
-    //     id="password"
-    //     value={password}
-    //     onChange={(e) => setPassword(e.target.value)}
-    //   />
-    //     <input type="submit" value="Sign Up" />
-    // </form>
 )
 }
 
