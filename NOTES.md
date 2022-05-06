@@ -28,3 +28,14 @@ Project Ideas
 * Signup 
 * Login
 * Navigation (Navbar)
+
+### Data
+ {
+     "users": [
+         {
+             "id": 1,
+             "username": "Michael",
+             "password": 123
+         }
+     ]
+ }

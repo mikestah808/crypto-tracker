@@ -8,11 +8,28 @@ function SignupForm() {
 
   function handleSubmit(event) {
     event.preventDefault();
+
     const formData = { 
       username,
       password
     }
-    console.log(formData);
+
+  fetch("http://localhost:3000/users", {
+    method: 'POST',
+    headers: {
+    'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(formData),
+    })
+    .then(response => response.json())
+    .then(data => {
+    console.log('Success:', data);
+    })
+    .catch((error) => {
+    console.error('Error:', error);
+    });
+    
+    // alert("Nice! Directing you to the home page")
   }
 
 
@@ -44,7 +61,7 @@ function SignupForm() {
               onChange={(e) => setPassword(e.target.value)}
               />
           </div>
-            <input type="submit" value="Sign Up" />
+            <input className="submit" type="submit" value="Sign Up" />
         </form>
       </div>
     </div>

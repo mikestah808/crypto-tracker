@@ -52,7 +52,7 @@
       "symbol": "XRP",
       "image": "https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1605778731",
       "marketCap": 733805234038,
-      "price": 0.60
+      "price": 0.6
     },
     {
       "id": 7,
@@ -88,7 +88,7 @@
       "symbol": "UST",
       "image": "https://assets.coingecko.com/coins/images/12681/large/UST.png?1601612407",
       "marketCap": 18553032429,
-      "price": 1.00
+      "price": 1
     },
     {
       "id": 11,
@@ -115,7 +115,7 @@
       "symbol": "DOT",
       "image": "https://assets.coingecko.com/coins/images/12171/large/polkadot.png?1639712644",
       "marketCap": 16494852947,
-      "price": 14.90
+      "price": 14.9
     },
     {
       "id": 14,
@@ -179,6 +179,18 @@
       "image": "https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912",
       "marketCap": 7343463387,
       "price": 1.06
+    }
+  ],
+  "users": [
+    {
+      "username": "mikestah808",
+      "password": 123,
+      "id": 1
+    },
+    {
+      "username": "richard",
+      "password": "iluvdonnuts",
+      "id": 2
     }
   ]
 }
