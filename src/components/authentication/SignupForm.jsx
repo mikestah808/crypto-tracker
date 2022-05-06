@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-function SignupForm() {
+function SignupForm({ loginUser }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -25,7 +25,11 @@ function SignupForm() {
     })
     .then(response => response.json())
     .then(data => {
-    navigate('/');
+      //data (formData Obj which is the user info) is returned from the HTTP POST request 
+      //invoke loginUser function which takes in the data as an argument and passes the data up as a callback prop
+      //loginUser function will update currentUser to the formData object that was typed into the Signup Form
+      loginUser(data)
+      navigate('/');
     })
     .catch((error) => {
       console.error('Error:', error);
