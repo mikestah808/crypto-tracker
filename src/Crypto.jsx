@@ -10,8 +10,8 @@ function Crypto({ crypto }) {
             <td>{rank}</td>
             <td><img src={image} alt="crypto-pic" width="20" height="20"/>{name}</td>
             <td>{symbol}</td>
-            <td>${price}</td>
-            <td>${marketCap}</td>
+            <td>${price.toLocaleString()}</td>
+            <td>${marketCap.toLocaleString()}</td>
           </tr>
   )
 }

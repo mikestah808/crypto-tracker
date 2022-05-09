@@ -7,6 +7,9 @@ import Navbar from './components/navigation/Navbar';
 
 const BASE_URL = "http://localhost:3000";
 
+//wHAT DO I WANT TO ADD TO MY PROJECT? 
+// ---> HOW DO I ACTIVELY TRACK CURRENT PRICE AND MARKET CAP OF CRYPTO AND HOW WILL I MAKE IT RENDER ON BROWSER
+
 function App() {
   //create piece of state and update state to be the value of the search input value 
   const [search, setSearch] = useState("")

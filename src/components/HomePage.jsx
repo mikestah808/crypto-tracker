@@ -29,7 +29,7 @@ function HomePage({ search }) {
 
 
   return (
-    <div className="homepage">
+    <div>
     <CryptoList cryptos={filterCrypto}/>
     
     </div>
