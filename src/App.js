@@ -50,7 +50,7 @@ function App() {
      />
     <Routes>
       <Route path="/" element={ <HomePage search={search}/> }/>
-      <Route path="/login" element={ <Login/> } />
+      <Route path="/login" element={ <Login loginUser={loginUser}/> } />
       <Route path="/signup" element={ <SignupForm loginUser={loginUser}/> } />
     </Routes>
     </BrowserRouter>

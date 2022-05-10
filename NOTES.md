@@ -27,6 +27,8 @@ Project Ideas
 * Portfolio
 * Signup 
 * Login
+* Quantity Owned 
+* Amount of money owned 
 * Navigation (Navbar)
 
 ### Data

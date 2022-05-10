@@ -1,8 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router';
 
-function Login() {
+function Login({ loginUser }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [users, setUsers] = useState([]);
+
+  const navigate = useNavigate(0);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/users")
+    .then((resp) => resp.json())
+    .then((data) => setUsers(data))
+  }, [])
 
 
   function handleChange(event){
@@ -10,7 +20,13 @@ function Login() {
   }
 
   function handleSubmit(event){
-    event.preventDefault()
+    event.preventDefault();
+
+    const user = users.find((user) => user.username.toLowerCase() === username.toLowerCase())
+    if(user){
+      loginUser(user)
+      navigate("/")
+    }
   }
 
   return (
@@ -26,7 +42,7 @@ function Login() {
             className="input" 
             type="text" 
             value={username} 
-            onChange={(e) => setUsername(e.target.value)}/>
+            onChange={handleChange}/>
         </div>
         <div className="password">
             <label className="label">Password</label>
