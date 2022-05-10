@@ -1,10 +1,22 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 function SignupForm({ loginUser }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [account, setAccount] = useState([]);
   const navigate = useNavigate();
+
+
+    useEffect(() => {
+      fetch("http://localhost:3000/users")
+    .then((resp) => resp.json())
+    .then((users) => setAccount(users))
+    }, [])
+
+    const existingAccounts = account.filter((account) => account.username === username)
+    console.log(account)
+    
 
 
 
@@ -16,7 +28,13 @@ function SignupForm({ loginUser }) {
       password
     }
 
-  fetch("http://localhost:3000/users", {
+    // create conditional which checks userObjects with formData property value pairs submitted
+    // how do we do this? 
+
+    if(existingAccounts){
+      alert('you already have an account!')
+    } else {
+      fetch("http://localhost:3000/users", {
     method: 'POST',
     headers: {
     'Content-Type': 'application/json',
@@ -33,10 +51,15 @@ function SignupForm({ loginUser }) {
     })
     .catch((error) => {
       console.error('Error:', error);
-      });
+      })
+    }
+
       
     // alert("Nice! Directing you to the home page")
   }
+
+  //what do i want?
+  //i want to create a feature where IF the username and password object exists, i will not be logged in, it will decline the new account, and alert saying "looks like you already have an account"
 
 
 
