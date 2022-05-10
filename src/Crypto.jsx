@@ -1,19 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 
 function Crypto({ crypto }) {
   const [amount, setAmount] = useState(0)
+  const [money, setMoney] = useState(0)
+
   const {rank, name, image, symbol, price, marketCap} = crypto
+
+  useEffect(() => {
+    setMoney(amount * price)
+  }, [amount])
 
 
   function plusButton(){
-    setAmount((amount) => amount + 1);
+    setAmount((amount) => (amount + 1));
   }
-  
+
   function minusButton(){
     if(amount > 0)
-    setAmount((amount) => amount - 1)
+    setAmount((amount) => (amount - 1))
   }
+
 
 
 
@@ -29,6 +36,7 @@ function Crypto({ crypto }) {
               <button onClick={minusButton}>-</button>
               <button onClick={plusButton}>+</button>
             </td>
+            <td>{money}</td>
           </tr>
           
   )

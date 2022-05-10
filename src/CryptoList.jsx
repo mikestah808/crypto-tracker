@@ -5,7 +5,7 @@ import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 
 
-function CryptoList({ cryptos, handleAmount}) {
+function CryptoList({ cryptos }) {
 
   // console.log(extraData);
 
@@ -21,7 +21,7 @@ function CryptoList({ cryptos, handleAmount}) {
 
   const renderCryptos = cryptos.map((crypto) => {
     return (
-      <Crypto key={crypto.id} crypto={crypto} handleAmount={handleAmount}/>
+      <Crypto key={crypto.id} crypto={crypto}/>
     )
   })
 
@@ -47,7 +47,10 @@ function CryptoList({ cryptos, handleAmount}) {
                 Market Cap
               </TableCell>
               <TableCell align="left">
-                Amount Owned
+                Quantity Owned
+              </TableCell>
+              <TableCell align="left">
+                Price Amount
               </TableCell>
             </tr>
           </TableHead>
