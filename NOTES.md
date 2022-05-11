@@ -41,3 +41,9 @@ Project Ideas
          }
      ]
  }
+
+
+ ## Notes 
+
+ * once user either creates account and/or completes login, redirect to Home Page with cryptos
+ * add emoji account image to Navbar when user info is submitted from create account and/or login

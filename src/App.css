@@ -6,6 +6,11 @@ tr{
   border-bottom:1px solid lightgray; 
 }
 
+img {
+  height: 30px;
+  width: 30px;
+}
+
 .homepage{
   background: linear-gradient(135deg, rgba(0, 183, 255, 0), rgb(29, 53, 192));
 }

@@ -19,13 +19,22 @@ function Login({ loginUser }) {
     setUsername(event.target.value)
   }
 
+  function handlePassword(event){
+    setPassword(event.target.value)
+  }
+
   function handleSubmit(event){
     event.preventDefault();
 
-    const user = users.find((user) => user.username.toLowerCase() === username.toLowerCase())
-    if(user){
-      loginUser(user)
+    // const loginAccount = users.find((user) => user.username.toLowerCase() && user.password === username.toLowerCase() && password)
+    
+    const loginAccount = users.find((user) => user.username.toLowerCase() === username.toLowerCase() && user.password === password)
+    
+    if(loginAccount){
+      loginUser(loginAccount)
       navigate("/")
+    } else {
+      alert('username or password is incorrect. try again')
     }
   }
 
@@ -50,7 +59,7 @@ function Login({ loginUser }) {
             className="input" 
             type="password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={handlePassword}
             />
         </div>
           <input className="submit" type="submit" value="Login" />

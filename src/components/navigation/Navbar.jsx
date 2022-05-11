@@ -30,15 +30,17 @@ function Navbar({ search, setSearch, loggedIn, logoutUser }) {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           <img 
           src="https://static.coingecko.com/s/thumbnail-007177f3eca19695592f0b8b0eabbdae282b54154e1be912285c9034ea6cbaf2.png" 
-          alt="crypto-gecko-pic"
-          height="30"
-          width="30"
+          alt="gecko-image"
           align= "left"
           />
           Crypto Gecko
         </Typography>
           <Button color="inherit" to="/" component={ Link }>Home</Button>
           <Button color="inherit" onClick={ logout }>Logout</Button>
+          <img 
+          src="https://e7.pngegg.com/pngimages/782/114/png-clipart-profile-icon-circled-user-icon-icons-logos-emojis-users.png"
+          alt="account-image"
+          />
           <Search search={search} setSearch={setSearch}/>
         </Toolbar>
       </AppBar>

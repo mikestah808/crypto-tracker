@@ -184,7 +184,7 @@
   "users": [
     {
       "username": "mikestah808",
-      "password": 123,
+      "password": "ilikedogs",
       "id": 1
     },
     {
@@ -194,8 +194,28 @@
     },
     {
       "username": "bobthefirst",
-      "password": "123",
+      "password": "password",
       "id": 3
+    },
+    {
+      "username": "mikestah",
+      "password": "pass",
+      "id": 4
+    },
+    {
+      "username": "mike",
+      "password": "cham",
+      "id": 5
+    },
+    {
+      "username": "dude",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "username": "ilovestarbucks",
+      "password": "123",
+      "id": 7
     }
   ]
 }

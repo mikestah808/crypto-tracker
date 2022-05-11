@@ -5,7 +5,8 @@ function SignupForm({ loginUser }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [account, setAccount] = useState([]);
-  const navigate = useNavigate();
+  
+  const navigate = useNavigate(0);
 
 
     useEffect(() => {
@@ -14,7 +15,7 @@ function SignupForm({ loginUser }) {
     .then((users) => setAccount(users))
     }, [])
 
-    const existingAccounts = account.filter((account) => account.username === username)
+    const existingAccount = account.find((account) => account.username.toLowerCase() === username.toLowerCase())
     console.log(account)
     
 
@@ -31,7 +32,7 @@ function SignupForm({ loginUser }) {
     // create conditional which checks userObjects with formData property value pairs submitted
     // how do we do this? 
 
-    if(existingAccounts){
+    if(existingAccount){
       alert('you already have an account!')
     } else {
       fetch("http://localhost:3000/users", {
