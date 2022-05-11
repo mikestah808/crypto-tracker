@@ -37,10 +37,6 @@ function Navbar({ search, setSearch, loggedIn, logoutUser }) {
         </Typography>
           <Button color="inherit" to="/" component={ Link }>Home</Button>
           <Button color="inherit" onClick={ logout }>Logout</Button>
-          <img 
-          src="https://e7.pngegg.com/pngimages/782/114/png-clipart-profile-icon-circled-user-icon-icons-logos-emojis-users.png"
-          alt="account-image"
-          />
           <Search search={search} setSearch={setSearch}/>
         </Toolbar>
       </AppBar>

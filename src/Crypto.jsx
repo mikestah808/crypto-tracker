@@ -36,7 +36,7 @@ function Crypto({ crypto }) {
               <button onClick={minusButton}>-</button>
               <button onClick={plusButton}>+</button>
             </td>
-            <td>{money}</td>
+            <td >{money}</td>
           </tr>
           
   )

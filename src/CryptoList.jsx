@@ -31,25 +31,25 @@ function CryptoList({ cryptos }) {
         <Table>
           <TableHead>
             <tr>
-              <TableCell align="left">
+              <TableCell align="center">
                 Rank #
               </TableCell>
-              <TableCell align="left">
+              <TableCell align="center">
                 Coin
               </TableCell>
-              <TableCell align="left" >
+              <TableCell align="center" >
                 Symbol
               </TableCell>
-              <TableCell align="left">
+              <TableCell align="center">
                 Price
               </TableCell>
-              <TableCell align="left">
+              <TableCell align="center">
                 Market Cap
               </TableCell>
-              <TableCell align="left">
+              <TableCell align="center">
                 Quantity Owned
               </TableCell>
-              <TableCell align="left">
+              <TableCell align="center">
                 Price Amount
               </TableCell>
             </tr>
