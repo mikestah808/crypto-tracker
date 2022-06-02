@@ -21,14 +21,12 @@ function Crypto({ crypto }) {
     setAmount((amount) => (amount - 1))
   }
 
-
-
-
   return (
           <tr>
             <td>{rank}</td>
             <td><img src={image} alt="crypto-pic" width="20" height="20"/>{name}</td>
             <td>{symbol}</td>
+            {/* .toLocaleString() returns a string with a language-sensitive representation of this number  */}
             <td>${price.toLocaleString()}</td>
             <td>${marketCap.toLocaleString()}</td>
             <td>
@@ -36,9 +34,9 @@ function Crypto({ crypto }) {
               <button onClick={minusButton}>-</button>
               <button onClick={plusButton}>+</button>
             </td>
-            <td >${money}</td>
+            {/* .toFixed() method formats a number using fixed-point notation */}
+            <td>$ {money.toFixed(2)}</td>
           </tr>
-          
   )
 }
 

@@ -10,7 +10,7 @@ function SignupForm({ loginUser }) {
 
 
     useEffect(() => {
-      fetch("http://localhost:3000/users")
+    fetch("http://localhost:3000/users")
     .then((resp) => resp.json())
     .then((users) => setAccount(users))
     }, [])

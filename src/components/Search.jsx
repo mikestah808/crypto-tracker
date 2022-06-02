@@ -6,8 +6,8 @@ function Search({ search, setSearch }) {
   //why? because then i can manipulate the DOM by using the setter function of setCryptos and updating it to the new list of filtered cryptos 
   
 
-  function handleSearch(searchedCrypto){
-    setSearch(searchedCrypto)
+  function handleSearch(e){
+    setSearch(e.target.value)
   }
 
   return (
@@ -18,7 +18,7 @@ function Search({ search, setSearch }) {
         id="search"
         placeholder="Search..."
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={handleSearch}
       />
     </div>
   );
