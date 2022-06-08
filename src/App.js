@@ -34,6 +34,7 @@ function App() {
     useEffect(() => {
       const userId = localStorage.getItem('user_id');
       if(userId && !loggedIn){
+        //the userId is the id number of that specific user within the db.json
         fetch(BASE_URL + '/users/' + userId)
         .then((resp) => resp.json())
         .then((data) => loginUser(data))
@@ -41,7 +42,6 @@ function App() {
     }, [])
 
   return (
-    <div>
     <BrowserRouter>
     <Navbar
     loggedIn={loggedIn}
@@ -54,7 +54,6 @@ function App() {
       <Route path="/signup" element={ <SignupForm loginUser={loginUser}/> } />
     </Routes>
     </BrowserRouter>
-    </div>
   );
 }
 

@@ -7,12 +7,12 @@ const BASE_URL = "http://localhost:3000/cryptos";
 
 
 function HomePage({ search }) {
+
   const [cryptos, setCryptos] = useState([])
+//create functionality that will filter through the list of cryptocurrencies based on what is typed in the search input 
+//if the search input value does not match the listed crypto, then return everything else 
 
-
- 
- //create functionality that will filter through the list of cryptocurrencies based on what is typed in the search input 
-  //if the search input value does not match the listed crypto, then return everything else 
+//.includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate 
   const filterCrypto = cryptos.filter((crypto) => crypto.name.toLowerCase().includes(search.toLowerCase()))
 
 

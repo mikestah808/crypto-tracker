@@ -53,21 +53,13 @@ function SignupForm({ loginUser }) {
     .catch((error) => {
       console.error('Error:', error);
       })
-    }
-
-      
+    }  
     // alert("Nice! Directing you to the home page")
   }
 
   //what do i want?
   //i want to create a feature where IF the username and password object exists, i will not be logged in, it will decline the new account, and alert saying "looks like you already have an account"
-
-
-
-
-
-
-  return (
+return (
     <div className="container"> 
       <div className="app-wrapper">
         <div>

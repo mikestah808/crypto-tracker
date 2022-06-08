@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 function Crypto({ crypto }) {
   const [amount, setAmount] = useState(0)
   const [money, setMoney] = useState(0)
-
+  
   const {rank, name, image, symbol, price, marketCap} = crypto
 
   useEffect(() => {

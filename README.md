@@ -66,4 +66,4 @@ This web app was made with:
 
 # Conclusion 
 
-Learning React was thoroughly challenging, yet very rewarding once I started to get the hang of it. I look forward to learning more as I get further into my flatiron curriculum and learn backend next. I plan to continue adding to this project as crypto is a passion of mine!
+Learning React was thoroughly challenging, yet very rewarding once I started to get the hang of it. I look forward to learning more as I get further into my flatiron curriculum and learn backend next. I plan to continue adding to this project as crypto is a passion of mine! 
